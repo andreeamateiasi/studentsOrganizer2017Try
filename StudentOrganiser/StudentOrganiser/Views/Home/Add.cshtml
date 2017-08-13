@@ -1,0 +1,50 @@
+﻿@model IEnumerable<StudentOrganiser.Models.Academy>
+
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add</h2>
+@foreach (var item in Model)
+{
+    <div>
+        <dt>
+            department
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(modelItem => item.Department)
+        </dd>
+        <dt>
+            Finish
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(modelItem => item.Finish)
+        </dd>
+        <dt>
+            Start
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(modelItem => item.Start)
+        </dd>
+        <dt>
+            Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(modelItem => item.Name)
+        </dd>
+        <dt>
+            Remarks
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(modelItem => item.Remarks)
+        </dd>
+
+        
+
+    </div>
+}
